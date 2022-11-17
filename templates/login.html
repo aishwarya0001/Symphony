@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/register.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="outer-container">
+        <div class="inner-container">
+            <div class="form">
+                <div class="f">
+                    <div class="heading">
+                        <h1>Log In</h1>
+                    </div>
+                    <div class="rest">
+                        <form method="POST" action="">
+                            {{ form.hidden_tag() }}
+                            <div class="username label-field">
+                                <div class="label">Username</div>  
+                                <div class="fd">
+                                    {{ form.username(class='user field', placeholder = 'enter your username') }}
+                                </div> 
+                            </div>
+                            <div class="password label-field">
+                                <div class="label">Password</div>
+                                <div class="fd">
+                                    {{ form.password(class='pass field', placeholder = 'enter your password') }}
+                                </div>
+                            </div>
+                            <div class="submit-button">{{ form.submit(class='submit') }}</div>
+                            <div class="link">
+                                Don't have have an account ? <a href="{{ url_for('register') }}">Sign Up</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="image">
+                
+            </div> -->
+        </div>
+    </div>
+</body>
+
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<body>
+    <h1>Login Page</h1>
+    <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        {{ form.username }}
+        {{ form.password }}
+        {{ form.submit }}
+    </form>
+
+    <a href="{{ url_for('register') }}">Don't have an account? Sign Up</a>
+</body>
+
+</html> -->

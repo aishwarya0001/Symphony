@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+}
+body
+{
+    background-image: url("rsc/2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+a
+{
+    color: white;
+}
+.outer-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.inner-container, .button-link
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.inner-container div
+{
+    padding: 7px;
+}
+.heading h1 
+{
+    font-size: 50px;
+}
+button
+{
+    padding: 6px 20px;
+    background-color: rgba(255, 255, 255, 0.281);
+    border: 2px solid rgba(255, 255, 255, 0.281);
+    border-radius: 5px;
+}
+button a
+{
+    text-decoration: none;
+    font-size: 19px;
+    transition: 0.5ms;
+}
+button:hover
+{
+    border: 2px solid rgba(255, 255, 255, 0.619);
+}
+.link p, .link a
+{
+    font-size: 16px;
+}
+.link
+{
+    position: fixed;
+    bottom: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
