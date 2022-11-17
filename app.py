@@ -5,7 +5,7 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField
 from wtforms.validators import InputRequired, Length, ValidationError
 from flask_bcrypt import Bcrypt
-import os
+# import os
 
 app = Flask(__name__)
 db = SQLAlchemy(app)
@@ -103,6 +103,7 @@ def register():
 
     return render_template('register.html', form=form)
 
-port = int(os.environ.get('PORT', 5000))
+# port = int(os.environ.get('PORT', 5000))
 if __name__ == "__main__":
-    app.run(debug=True, port=port, host='0.0.0.0')
+    # app.run(debug=True, port=port, host='0.0.0.0')
+    app.run(debug=True)
