@@ -10,7 +10,7 @@ from flask_bcrypt import Bcrypt
 app = Flask(__name__)
 db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://xiymmovbexbaey:c1c293939b50b6cb58e822097ae4782ebba6947d60ed588d90e86f7a0a37bf4e@ec2-54-163-34-107.compute-1.amazonaws.com:5432/db519kjkqq54lb'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://xiymmovbexbaey:c1c293939b50b6cb58e822097ae4782ebba6947d60ed588d90e86f7a0a37bf4e@ec2-54-163-34-107.compute-1.amazonaws.com:5432/db519kjkqq54lb'
 app.config['SECRET_KEY'] = 'thisisasecretkey'
 
 gu = 'blah blah'
